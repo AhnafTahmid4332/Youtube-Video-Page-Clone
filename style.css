@@ -1,0 +1,593 @@
+body {
+  font-family: Roboto, Arial;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #fff;
+  z-index: 100;
+}
+
+
+.left-section {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+margin-right: 300px;
+margin-left: 25px;
+}
+
+.hamburger-menu {
+  height: 24px;
+  width: 24px;
+}
+
+.youtube-logo {
+  width: 90px;
+  height: 20px;
+  margin-left: 20px;
+}
+
+.middle-section {
+ display: flex;
+ align-items: center;
+ margin-right: 300px;
+}
+
+
+.search-bar {
+ width: 536px;
+ height: 40px;
+ border-radius: 20px;
+ border: 1px solid hsla(0, 0%, 53.3%, 0.2);
+ padding-left: 20px;
+ color: grey;
+ font-size: 16px;
+ 
+
+}
+
+.search-button-container {
+  margin-left: -65px;
+  width: 65px;
+
+}
+.search-button {
+  width: 100%;
+  height: 43px;
+  border: 1px solid hsla(0, 0%, 53.3%, 0.2); 
+  border-radius: 0 40px 40px 0;
+  background-color: #f8f8f8;
+}
+
+
+
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.right-section {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.create-icon,
+.notifications-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.create-icon,
+.notifications-icon,
+.account-picture {
+  margin-right: 22px;
+}
+
+.account-picture {
+  width: 32px;
+  height: 32px;
+}
+
+.voice-search-container {
+  background-color: #f8f8f8;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-left: 15px;
+} 
+
+/* page body */
+
+.page-body {
+  display: flex;
+  flex-direction: row;
+ 
+ 
+ 
+}
+
+.voice-search-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/*this was margin-left-118px*/
+
+.video-thumbnail-container {
+  margin-top: 8px;
+  margin-left: 85px;
+}
+
+
+
+
+.video-title {
+  margin-left: 85px;
+  font-size: 1.3rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+}
+
+
+
+.sponser {
+  width: 402px;
+  height: 175.68px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.topic-selectors {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 360px;
+}
+
+.topic-selectors button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color, 0.35s;
+}
+
+
+
+.videos {
+  margin-top: 20px;
+  margin-left: 20px;
+  
+}
+
+.video {
+display: flex;
+align-items: top;
+margin-bottom: 5px
+}
+
+.video-preview-picture-container {
+  margin-right: 5px;
+}
+
+.video-preview-picture {
+  width: 168px;
+  height: 94px;
+  border-radius: 5px;
+}
+
+
+
+.video-preview-title {
+  font-weight: 500;
+}
+
+.video-preview-title {
+  font-size: 14px;
+}
+
+.video-preview-author-name,
+.video-preview-stats {
+  color: rgb(84, 82, 82);
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.more-options-icon {
+  margin-left: 15px;
+ 
+
+  
+}
+
+
+
+.video-title {
+  margin-right: 40px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 85px;
+}
+
+
+.profile-picture {
+  height: 45px;
+  width: 45px;
+  border-radius: 25px;
+}
+
+.profile-author-name {
+  font-weight: 500;
+}
+
+.profile-subscribers {
+  color: grey;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.subscribe-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.25s, opacity 0.25s;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  opacity: 0.8
+}
+
+.profile-picture-container,
+.profile-name-container {
+  margin-right: 13.9px;
+}
+
+.subscribe-button-container {
+  margin-left: 10px;
+}
+
+.thumbs-up-button,
+.thumbs-down-button 
+                   {
+  width: 84.8px;
+  height: 36px;
+  border-radius: 20px 0 0 20px;
+  
+}
+
+.thumbs-up-picture,
+.thumbs-down-picture,
+.share-button-icon,
+ .download-button-icon {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}
+
+.thumbs-down-button {
+  width: 84.8px;
+  height: 36px;
+  margin-left: -5px;
+  border-radius: 0 20px 20px 0;
+ 
+}
+
+.thumbs-down-picture {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.thumbs-down-button,
+.thumbs-up-button,
+.share-button,
+.download-button,
+.more-options-button{
+  background-color: #f8f8f8;
+  border: none;
+  
+}
+
+.thumbs-up-button {
+  border-right: 2px solid rgb(239, 234, 234);
+}
+
+
+
+.thumbs-up-picture {
+  vertical-align: middle;
+}
+
+.video-like-container {
+  margin-left: 160px;
+ 
+}
+
+.video-description-box {
+  background-color: #f8f8f8;
+  width: 850px;
+  height: 90px;
+  margin-left: 85px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.description-details {
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+#css-tag {
+  color: grey;
+  margin-left: 3px;
+}
+
+.description-body {
+  width: 800px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.more {
+  font-weight: 500;
+}
+
+.marketing-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 85px;
+  margin-top: 30px;
+}
+
+.marketing-section {
+  display: flex;
+  flex-direction: row;
+  margin-left: 85px;
+  margin-top: 25px;
+  border-bottom: 1px solid rgb(205, 201, 201);
+
+}
+
+
+
+.product-picture {
+  width: 90px;
+  height: 90px;
+}
+
+.product-info {
+  margin-left: 8px;
+}
+
+.product-name {
+  margin-bottom: 3px
+}
+
+.product-price {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.product-material {
+  color: grey;
+  font-size: 12px;
+}
+
+.marketing-section {
+  background-color: white;
+}
+
+.comment-amount {
+  margin-left: 85px;
+  margin-top: 25px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.my-comment {
+  margin-left: 85px;
+  margin-top: 30px;
+}
+
+.my-profile,
+.others-profile  {
+ height: 40px;
+ width: 40px;
+ border-radius: 22px;
+ vertical-align: top;
+ object-fit: cover;
+}
+
+.comment-input {
+  width: 750px;
+  margin-left: 10px;
+  font-size: 16px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color:  #f8f8f8;
+  
+}
+
+.others-comment {
+  display: flex;
+  margin-left: 85px;
+  margin-top: 30px;
+}
+
+.others-comment-body {
+  margin-left: 15px
+}
+
+.others-profile-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.time-of-comment {
+font-size: 12px;
+color: grey;
+margin-left: 2px;
+}
+
+.main-text {
+  width: 544px;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.like-icon,
+.dislike-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-top: 5px
+}
+
+.like-number {
+  font-size: 12px;
+  color: grey;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+.dislike-icon {
+  margin-left: 10px;
+}
+
+.reply {
+  font-size: 12px;
+  margin-left: 20px
+}
+
+.thumbsup-amount {
+ font-weight: 700;
+ margin-left: 3px;
+}
+
+
+.share-button,
+.download-button,
+.more-options-button {
+padding: 10px;
+border-radius: 20px;
+margin-left: 5px;
+transition: background-
+
+}
+
+.share-button:hover,
+.download-button:hover,
+.more-options-button:hover {
+color: grey;
+}
+
+.share-button-icon,
+.download-button-icon,
+.more-options-icon {
+  vertical-align: middle;
+}
+
+
+.more-options-button {
+  font-size: 20px;
+}
+
+.share-span,
+.download-span {
+  font-weight: 700;
+  margin-left: 3px;
+}
+
+
+.is-toggled {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+
+.is-subscribed {
+  background-color: #f8f8f8;
+  color: black;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: none;
+  transform: scale(1.1);
+}
+
+.youtube-video {
+  border-radius: 15px;
+  width: 927.287px;
+  height: 521.588px;
+}
+
+.search-bar {
+  display: flex;
+  width: 536px; 
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid hsla(0, 0%, 53.3%, 0.2);
+  padding-left: 20px;
+  color: grey;
+  font-size: 16px;
+}
+
+@media (min-width:380px) {
+  .youtube-video {
+    
+  }
+}
+
+
+
+

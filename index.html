@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <title>YouTube Video Page</title>
+</head>
+<body>
+  <div class="Container">
+
+  <!--Video header-->
+
+  <header>
+    <div class="header">
+      <div class="left-section">
+        <img src="icons/hamburger-menu.svg" class="hamburger-menu" alt="Menu">
+        <img src="icons/youtube-logo.svg" class="youtube-logo" alt="YouTube Logo">
+      </div>
+      <div class="middle-section">
+        <input type="text" class="search-bar" placeholder="Search">
+        <div class="search-button-container">
+          <button class="search-button">
+            <img src="icons/search.svg" class="search-icon" alt="Search">
+          </button>
+        </div>
+        <div class="voice-search-container">
+          <img src="icons/voice-search-icon.svg" class="voice-search-icon" alt="Voice Search">
+        </div>
+      </div>
+      <div class="right-section">
+        <img src="icons/upload.svg" class="create-icon" alt="Upload">
+        <img src="icons/notifications.svg" class="notifications-icon" alt="Notifications">
+        <img src="icons/my-channel.jpeg" class="account-picture" alt="Account">
+      </div>
+    </div>
+  </header>
+
+  <!--Page body-->
+
+  <div class="page-body">
+    <div class="main-video-body">
+      <div class="video-thumbnail-container">
+        <video controls class="youtube-video">
+          <source src="Very small CSS tweaks for better forms.mp4" type="video/mp4">
+      </video>
+      </div>
+      <div class="video-info-section">
+        <div class="video-title">
+          Very small CSS tweaks for better forms
+        </div>
+
+         <!--profile container-->
+
+        <div class="profile-container">
+          <div class="profile-picture-container">
+            <img src="icons/main-profile.jpg" class="profile-picture" alt="Profile Picture">
+          </div>
+          <div class="profile-name-container">
+            <p class="profile-author-name">Kevin Powell &#10004;</p>
+            <p class="profile-subscribers">935k subscribers</p>
+          </div>
+          <div class="subscribe-button-container">
+            <button class="subscribe-button js-subscribe-button" onclick="
+              changeButton();
+              ">Subscribe</button>
+          </div>
+         
+               <!--video like container-->
+
+          <div class="video-like-container">
+            <button class="thumbs-up-button">
+              <img src="icons/icons8-thumbs-up-24.png" class="thumbs-up-picture" > <span class="thumbsup-amount">3.2k</span>
+            </button>
+            <button class="thumbs-down-button">
+              <img src="icons/icons8-thumbs-down-24.png" class="thumbs-down-picture" alt="Thumbs Down">
+            </button>
+            <button class="share-button">
+              <img src="icons/share_120219.png" class="share-button-icon" alt="Share"> <span class="share-span">Share</span>
+            </button>
+            <button class="download-button">
+              <img src="icons/icons8-downloading-updates-25.png" class="download-button-icon" alt="Download"> <span class="download-span">Download</span>
+            </button>
+            <button class="more-options-button">&#8230;</button>
+          </div>
+        </div>
+   
+
+
+       
+
+     <!--Video description-->
+
+        <div class="video-description-box">
+          <p class="description-details">
+            31k views 5 days ago <span id="css-tag">#css</span>
+          </p>
+          <p class="description-body">
+            I talked about this in a Short, but wasn't able to get the last half in because Shorts are too short, so here's the extended cut, where I look at how we can replicate the :user-valid using :not(:placeholder-shown) 🙂<br>
+            <span class="more">...more</span>
+          </p>
+        </div>
+        <p class="marketing-title">Shop the Kevin Powell store</p>
+        <div class="marketing-section">
+          <div class="product-picture-container">
+            <img src="icons/clothing-picture1.PNG" class="product-picture" alt="Product Picture 1">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Front-end Friends - Casca...</p>
+            <p class="product-price">BDT 3,807.25</p>
+            <p class="product-material">Cotton Bureau</p>
+          </div>
+          <div class="product-picture-container">
+            <img src="icons/clothing-picture2.PNG" class="product-picture" alt="Product Picture 2">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Front-end Friends - Casca...</p>
+            <p class="product-price">BDT 3,807.25</p>
+            <p class="product-material">Cotton Bureau</p>
+          </div>
+          <div class="product-picture-container">
+            <img src="icons/clothing-picture3.PNG" class="product-picture" alt="Product Picture 3">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Front-end Friends - Casca...</p>
+            <p class="product-price">BDT 3,807.25</p>
+            <p class="product-material">Cotton Bureau</p>
+          </div>
+        </div>
+      </div>
+      <p class="comment-amount">100 Comments</p>
+
+      <div class="my-comment">
+        <img src="icons/my-profile.jpg" class="my-profile" class="my-profile">
+        <input type="text" class="comment-input" placeholder="Add a comment">
+      </div>
+
+       <div class="others-comment">
+        <img src="icons/profile-2.jpg" class="others-profile">
+        <div class="others-comment-body">
+          <p class="others-profile-name">@ArmancKeser <span class="time-of-comment">6 days ago</span></p>
+          <p class="main-text">
+            Would love to see more of 3 min videos showing such tricks. I think it is the sweet spot of attention holding and information packed and I find there is a lack of such content in this channel, and considering how knowledgeable you are it would be absolute gold to hear more information in this format. Thanks!
+          </p>
+           
+            <img src="icons/icons8-thumbs-up-24.png" class="like-icon"> <span class="like-number">125</span>
+            <img src="icons/icons8-thumbs-down-24.png" class="dislike-icon">
+            <span class="reply">Reply</span>
+          
+          
+        </div>
+       </div>
+
+       <div class="others-comment">
+        <img src="icons/profile-2.jpg" class="others-profile">
+        <div class="others-comment-body">
+          <p class="others-profile-name">@Love_webDev <span class="time-of-comment">8 days ago</span></p>
+          <p class="main-text">
+            This was soooo cool! Thank you!
+          </p>
+           
+            <img src="icons/icons8-thumbs-up-24.png" class="like-icon"> <span class="like-number">47</span>
+            <img src="icons/icons8-thumbs-down-24.png" class="dislike-icon">
+            <span class="reply">Reply</span>
+          
+          
+        </div>
+       </div>
+
+       <div class="others-comment">
+        <img src="icons/profile4.jpg" class="others-profile">
+        <div class="others-comment-body">
+          <p class="others-profile-name">@RahulKhan <span class="time-of-comment">4 days ago</span></p>
+          <p class="main-text">
+            The placeholder trick is neat! 
+            Also, the under 10mins videos are really welcomed!
+          </p>
+           
+            <img src="icons/icons8-thumbs-up-24.png" class="like-icon"> <span class="like-number">38</span>
+            <img src="icons/icons8-thumbs-down-24.png" class="dislike-icon">
+            <span class="reply">Reply</span>
+          
+          
+        </div>
+       </div>
+
+       <div class="others-comment">
+        <img src="icons/profile-5.jpg" class="others-profile">
+        <div class="others-comment-body">
+          <p class="others-profile-name">
+            @phonk1s <span class="time-of-comment">6 days ago</span></p>
+          <p class="main-text">
+            ove these short videos
+          </p>
+           
+            <img src="icons/icons8-thumbs-up-24.png" class="like-icon"> <span class="like-number">2</span>
+            <img src="icons/icons8-thumbs-down-24.png" class="dislike-icon">
+            <span class="reply">Reply</span>
+          
+          
+        </div>
+       </div>
+
+       <div class="others-comment">
+        <img src="icons/profile3.jpg" class="others-profile">
+        <div class="others-comment-body">
+          <p class="others-profile-name">
+            @ahooton <span class="time-of-comment">2 days ago</span></p>
+          <p class="main-text">
+            Using :placeholder-shown (as shown in the second half of the video) is the way to go as it also ensures the outline-color is applied when autofilling the form. Thanks Kevin!
+          </p>
+           
+            <img src="icons/icons8-thumbs-up-24.png" class="like-icon"> <span class="like-number">25</span>
+            <img src="icons/icons8-thumbs-down-24.png" class="dislike-icon">
+            <span class="reply">Reply</span>
+          
+          
+        </div>
+
+       </div>
+    </div>
+    
+   <!--reccomended videos  section-->
+
+    <div class="reccomended-videos-section">
+      <img src="icons/sponership-youtube-enhanced.PNG" class="sponser" alt="Sponsorship">
+      <div class="topic-selectors">
+        <button class="js-button1" onclick="
+          toggleButton('.js-button1')
+          ">All</button>
+
+        <button class="js-button2" onclick="
+        toggleButton('.js-button2');
+        ">From KevinPowell</button>
+
+        <button class="js-button3" onclick="
+          toggleButton('.js-button3');
+        ">HTML</button>
+
+        <button class="js-button4" onclick="
+          toggleButton('.js-button4');
+        ">Javascript</button>
+      </div>
+      <div class="videos">
+        <div class="video">
+          <div class="video-preview-picture-container">
+            <img src="icons/video-preview.webp" class="video-preview-picture" alt="Video Preview 1">
+          </div>
+          <div class="video-preview-info">
+            <p class="video-preview-title">No, Flexbox isn't "good enough"
+              <span class="more-options-icon">&#8942;</span>
+            </p>
+            <p class="video-preview-author-name">Kevin Powell &#10004;</p>
+            <p class="video-preview-stats">38k views . 2 weeks ago</p>
+          </div>
+        </div>
+        <div class="video">
+          <div class="video-preview-picture-container">
+            <img src="icons/video-preview2.webp" class="video-preview-picture" alt="Video Preview 2">
+          </div>
+          <div class="video-preview-info">
+            <p class="video-preview-title">How to take control of Flexbox
+              <span class="more-options-icon">&#8942;</span>
+            </p>
+            <p class="video-preview-author-name">Kevin Powell &#10004;</p>
+            <p class="video-preview-stats">129k views . 4 months ago</p>
+          </div>
+        </div>
+        <div class="video">
+          <div class="video-preview-picture-container">
+            <img src="icons/video-preview4.webp" class="video-preview-picture" alt="Video Preview 4">
+          </div>
+          <div class="video-preview-info">
+            <p class="video-preview-title">Easy fix for a very annoying z-index issue
+              <span class="more-options-icon">&#8942;</span>
+            </p>
+            <p class="video-preview-author-name">Kevin Powell &#10004;</p>
+            <p class="video-preview-stats">819 views . 49 minutes ago</p>
+          </div>
+        </div>
+        <div class="video">
+          <div class="video-preview-picture-container">
+            <img src="icons/video-preview3.webp" class="video-preview-picture" alt="Video Preview 3">
+          </div>
+          <div class="video-preview-info">
+            <p class="video-preview-title">Use these instead of vh
+              <span class="more-options-icon">&#8942;</span>
+            </p>
+            <p class="video-preview-author-name">Kevin Powell &#10004;</p>
+            <p class="video-preview-stats">500k views . 9 months ago</p>
+          </div>
+        </div>
+
+        <div class="video">
+          <div class="video-preview-picture-container">
+            <img src="icons/video-preview5.webp" class="video-preview-picture" alt="Video Preview 5">
+          </div>
+          <div class="video-preview-info">
+            <p class="video-preview-title">Avoid these 5 beginner CSS mistakes
+              <span class="more-options-icon">&#8942;</span>
+            </p>
+            <p class="video-preview-author-name">Kevin Powell &#10004;</p>
+            <p class="video-preview-stats">81k views . 3 months ago</p>
+          </div>
+        </div>
+        <div class="video">
+          <div class="video-preview-picture-container">
+            <img src="icons/video-preview6.webp" class="video-preview-picture" alt="Video Preview 6">
+          </div>
+          <div class="video-preview-info">
+            <p class="video-preview-title">This common mistake is hurting your site
+              <span class="more-options-icon">&#8942;</span>
+            </p>
+            <p class="video-preview-author-name">Kevin Powell &#10004;</p>
+            <p class="video-preview-stats">70k views . 2 weeks ago</p>
+          </div>
+        </div>
+
+       <div class="video">
+          <div class="video-preview-picture-container">
+            <img src="icons/video-preview8.webp" class="video-preview-picture" alt="Video Preview 8">
+          </div>
+          <div class="video-preview-info">
+            <p class="video-preview-title">Easily improve your web design (With Example)
+              <span class="more-options-icon">&#8942;</span>
+            </p>
+            <p class="video-preview-author-name">Flux Academy &#10004;</p>
+            <p class="video-preview-stats">58k views . 2 months ago</p>
+          </div>
+        </div>
+
+        <div class="video">
+          <div class="video-preview-picture-container">
+            <img src="icons/video-preview9.webp" class="video-preview-picture" alt="Video Preview 9">
+          </div>
+          <div class="video-preview-info">
+            <p class="video-preview-title">Create Responsive CSS Grid Layouts with GRID WRAPPING
+              <span class="more-options-icon">&#8942;</span>
+            </p>
+            <p class="video-preview-author-name">Coding2GO &#10004;</p>
+            <p class="video-preview-stats">13k views . 5 days ago</p>
+          </div>
+        </div>
+
+        <div class="video">
+          <div class="video-preview-picture-container">
+            <img src="icons/vido-preview10.webp" class="video-preview-picture" alt="Video Preview 10">
+          </div>
+          <div class="video-preview-info">
+            <p class="video-preview-title">A new approach to container and wrapper classes
+              <span class="more-options-icon">&#8942;</span>
+            </p>
+            <p class="video-preview-author-name">Kevin Powell &#10004;</p>
+            <p class="video-preview-stats">254k views . 9 months ago</p>
+          </div>
+        </div>
+
+        <div class="video">
+          <div class="video-preview-picture-container">
+            <img src="icons/video-preview7webp.webp" class="video-preview-picture" alt="Video Preview 7">
+          </div>
+          <div class="video-preview-info">
+            <p class="video-preview-title">The HTML Tags They NEVER Taught You
+              <span class="more-options-icon">&#8942;</span>
+            </p>
+            <p class="video-preview-author-name">Glodev &#10004;</p>
+            <p class="video-preview-stats">80k views . 3 weeks ago</p>
+          </div>
+        </div>
+
+        <div class="video">
+          <div class="video-preview-picture-container">
+            <img src="icons/video-preview11.webp" class="video-preview-picture" alt="Video Preview 11">
+          </div>
+          <div class="video-preview-info">
+            <p class="video-preview-title">Obscure HTML elements that almost no one uses (but should!)
+              <span class="more-options-icon">&#8942;</span>
+            </p>
+            <p class="video-preview-author-name">Kevin Powell &#10004;</p>
+            <p class="video-preview-stats">99k views . 2 years ago</p>
+          </div>
+        </div>
+        <div class="video">
+          <div class="video-preview-picture-container">
+            <img src="icons/video-preview12.webp" class="video-preview-picture" alt="Video Preview 12">
+          </div>
+          <div class="video-preview-info">
+            <p class="video-preview-title">HTML in 5 minutes
+              <span class="more-options-icon">&#8942;</span>
+            </p>
+            <p class="video-preview-author-name">Aaron Jack&#10004;</p>
+            <p class="video-preview-stats">451k views . 3 years ago</p>
+          </div>
+        </div>
+
+        <div class="video">
+          <div class="video-preview-picture-container">
+            <img src="icons/video-preview14.webp" class="video-preview-picture" alt="Video Preview 5">
+          </div>
+          <div class="video-preview-info">
+            <p class="video-preview-title">5+ Must Know HTML Tags That Almost Nobody Knows
+              <span class="more-options-icon">&#8942;</span>
+            </p>
+            <p class="video-preview-author-name">Web Dev Simplified &#10004;</p>
+            <p class="video-preview-stats">614k views . 3 years ago</p>
+          </div>
+        </div>
+    
+    
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
